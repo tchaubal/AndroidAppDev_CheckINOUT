@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tanushreechaubal.check_in_out_feature.CheckInOut">
+
+
+    <EditText
+        android:id="@+id/txtdate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:hint="Select Check-In date"/>
+
+    <EditText
+        android:id="@+id/txtdate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtdate1"
+        android:hint="Select Check-Out date"/>
+
+    <TextView
+        android:text="@string/select_NumOfPeople"
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdate2"
+        android:layout_above="@+id/checkAvailability_Button"
+        android:layout_alignParentLeft="true"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/txtdate2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/people"
+        ></Spinner>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkAvailability_Button"
+        android:text="Check Availability"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
